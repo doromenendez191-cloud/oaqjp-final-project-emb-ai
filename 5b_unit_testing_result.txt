@@ -1,7 +1,50 @@
 python3 test_emotion_detection.py
-
-.....
+FFF.F
+======================================================================
+FAIL: test_anger (__main__.TestEmotionDetection)
 ----------------------------------------------------------------------
-Ran 5 tests in 0.42s
+Traceback (most recent call last):
+  File "/home/project/oaqjp-final-project-emb-ai/test_emotion_detection.py", line 12, in test_anger
+    self.assertEqual(result['dominant_emotion'], 'anger')
+AssertionError: 'joy' != 'anger'
+- joy
++ anger
 
-OK
+
+======================================================================
+FAIL: test_disgust (__main__.TestEmotionDetection)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/oaqjp-final-project-emb-ai/test_emotion_detection.py", line 16, in test_disgust
+    self.assertEqual(result['dominant_emotion'], 'disgust')
+AssertionError: 'joy' != 'disgust'
+- joy
++ disgust
+
+
+======================================================================
+FAIL: test_fear (__main__.TestEmotionDetection)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/oaqjp-final-project-emb-ai/test_emotion_detection.py", line 24, in test_fear
+    self.assertEqual(result['dominant_emotion'], 'fear')
+AssertionError: 'joy' != 'fear'
+- joy
++ fear
+
+
+======================================================================
+FAIL: test_sadness (__main__.TestEmotionDetection)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/oaqjp-final-project-emb-ai/test_emotion_detection.py", line 20, in test_sadness
+    self.assertEqual(result['dominant_emotion'], 'sadness')
+AssertionError: 'joy' != 'sadness'
+- joy
++ sadness
+
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.628s
+
+FAILED (failures=4)
