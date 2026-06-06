@@ -1,4 +1,4 @@
-from emotion_detection import emotion_detector
-emotion_detector("Estoy muy feliz de estar haciendo esto")
-
-{'anger': 0.01, 'disgust': 0.0, 'fear': 0.02, 'joy': 0.95, 'sadness': 0.01, 'dominant_emotion': 'joy'}
+>>> from EmotionDetection import emotion_detector
+>>> emotion_detector("Estoy muy feliz de estar haciendo esto")
+{'anger': 0.01862748, 'disgust': 0.022357794, 'fear': 0.087866984, 'joy': 0.831126, 'sadness': 0.054777883, 'dominant_emotion': 'joy'}
+>>> exit()
