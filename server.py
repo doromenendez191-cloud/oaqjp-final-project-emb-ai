@@ -1,11 +1,15 @@
-from flask import Flask, request
+from flask import Flask, request, render_template
 from EmotionDetection import emotion_detector
 
 app = Flask(__name__)
 
+@app.route('/')
+def index():
+    return render_template('index.html')
+
 @app.route('/emotionDetector', methods=['GET'])
 def detect_emotion():
-    text_to_analyze = request.args.get('text')
+    text_to_analyze = request.args.get('textToAnalyze')
 
     if not text_to_analyze:
         return "Error: No text provided", 400
